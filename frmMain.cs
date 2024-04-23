@@ -1,4 +1,5 @@
-﻿using PointofSale.View;
+﻿using PointofSale.Model;
+using PointofSale.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,6 +72,12 @@ namespace PointofSale
         private void btnTables_Click(object sender, EventArgs e)
         {
             AddControls(new frmTableView());
+        }
+
+        private void btnPOS_Click(object sender, EventArgs e)
+        {
+            frmPOS frm = new frmPOS();
+            frm.Show();
         }
     }
 }

@@ -82,6 +82,12 @@
     <Compile Include="Model\frmCategoryAdd.Designer.cs">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\frmPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmPOS.Designer.cs">
+      <DependentUpon>frmPOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\frmProductAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmCategoryAdd.resx">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmPOS.resx">
+      <DependentUpon>frmPOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmProductAdd.resx">
       <DependentUpon>frmProductAdd.cs</DependentUpon>
@@ -304,7 +313,23 @@
     <None Include="Resources\bin.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\newwhite.png" />
+    <None Include="Resources\newfill.png" />
+    <None Include="Resources\holdwhite.png" />
+    <None Include="Resources\holdfill.png" />
+    <None Include="Resources\reportwhite.png" />
+    <None Include="Resources\reportfillcolor.png" />
+    <None Include="Resources\motorbikewhite1.png" />
+    <None Include="Resources\motorbikewhite.png" />
+    <None Include="Resources\motorbikefill.png" />
+    <None Include="Resources\take-awayfill.png" />
+    <None Include="Resources\take-awaywhite.png" />
+    <None Include="Resources\Dine-infillcolor.png" />
+    <None Include="Resources\Dine-inwhite.png" />
+    <None Include="Resources\fast-food %282%29.png" />
+    <None Include="Resources\fast-food %281%29.png" />
     <Content Include="Resources\newproduct.png" />
+    <None Include="Resources\pos-terminalfillcolor1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

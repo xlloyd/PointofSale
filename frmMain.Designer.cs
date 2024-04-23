@@ -192,6 +192,7 @@
             this.btnPOS.Text = "Point Of Sale";
             this.btnPOS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPOS.TextOffset = new System.Drawing.Point(10, 2);
+            this.btnPOS.Click += new System.EventHandler(this.btnPOS_Click);
             // 
             // btnStaff
             // 
@@ -351,20 +352,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Poppins Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.label1.Location = new System.Drawing.Point(6, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 34);
+            this.label1.Size = new System.Drawing.Size(146, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tummy Time";
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = global::PointofSale.Properties.Resources.balanced_diet;
+            this.guna2PictureBox1.Image = global::PointofSale.Properties.Resources.fast_food__2_;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(27, 12);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-10, 12);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(98, 104);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(177, 97);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -387,11 +389,11 @@
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(44)))), ((int)(((byte)(43)))));
-            this.lblUser.Location = new System.Drawing.Point(29, 28);
+            this.lblUser.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
+            this.lblUser.Location = new System.Drawing.Point(24, 23);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(60, 23);
+            this.lblUser.Size = new System.Drawing.Size(73, 28);
             this.lblUser.TabIndex = 8;
             this.lblUser.Text = "uName";
             // 
