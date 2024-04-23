@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,36 @@ namespace PointofSale.Model
         private void frmPOS_Load(object sender, EventArgs e)
         {
             guna2DataGridView1.BorderStyle = BorderStyle.FixedSingle;
+            AddCategory();
+        }
+
+        private void AddCategory()
+        {
+            string qry = "Select * from category";
+            SqlCommand cmd = new SqlCommand(qry, MainClass.con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            CategoryPanel.Controls.Clear();
+
+
+            if (dt.Rows.Count > 0)
+            {
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    Guna.UI2.WinForms.Guna2Button b = new Guna.UI2.WinForms.Guna2Button();
+                    b.FillColor = Color.FromArgb(128, 61, 59);
+                    b.Size = new Size(116, 45);
+                    b.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+                    b.Text = row["catName"].ToString();
+
+                    CategoryPanel.Controls.Add(b);
+                }
+                
+            }
+
         }
     }
 }
