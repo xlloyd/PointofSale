@@ -106,6 +106,18 @@
     <Compile Include="Model\frmTableAdd.Designer.cs">
       <DependentUpon>frmTableAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\FrmTableSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FrmTableSelect.Designer.cs">
+      <DependentUpon>FrmTableSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmWaiterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmWaiterSelect.Designer.cs">
+      <DependentUpon>frmWaiterSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ucProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -173,6 +185,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmTableAdd.resx">
       <DependentUpon>frmTableAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\FrmTableSelect.resx">
+      <DependentUpon>FrmTableSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmWaiterSelect.resx">
+      <DependentUpon>frmWaiterSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>
@@ -322,6 +340,7 @@
     <None Include="Resources\bin.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\table.png" />
     <None Include="Resources\balanced-diet1.png" />
     <None Include="Resources\newwhite.png" />
     <None Include="Resources\newfill.png" />

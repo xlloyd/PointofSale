@@ -1,13 +1,6 @@
 ﻿using PointofSale.Model;
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PointofSale.View
@@ -26,7 +19,7 @@ namespace PointofSale.View
 
         public void GetData()
         {
-            string qry = "select pID, pName, pPrice, CategoryID,c.catName from products p inner join category c on c.catID = p.CategoryID where pName like '%" + txtSearch.Text + "%' ";
+            string qry = "select pID, pName, pPrice, CategoryID, c.catName from products p inner join category c on c.catID = p.CategoryID where pName like '%" + txtSearch.Text + "%' ";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvvid);
             lb.Items.Add(dgvName);

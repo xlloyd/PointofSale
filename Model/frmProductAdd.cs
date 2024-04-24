@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PointofSale.Model
@@ -104,7 +99,7 @@ namespace PointofSale.Model
 
             if (dt.Rows.Count > 0)
             {
-                TextName.Text = dt.Rows[0]["PName"].ToString();
+                TextName.Text = dt.Rows[0]["pName"].ToString();
                 txtPrice.Text = dt.Rows[0]["pPrice"].ToString();
 
                 Byte[] imageArray = (byte[]) (dt.Rows[0]["pImage"]);

@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.txtImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblName = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtImage = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtImage)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtImage)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
@@ -52,18 +52,6 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(160, 184);
             this.guna2ShadowPanel1.TabIndex = 0;
             // 
-            // txtImage
-            // 
-            this.txtImage.Image = global::PointofSale.Properties.Resources.balanced_diet1;
-            this.txtImage.ImageRotate = 0F;
-            this.txtImage.Location = new System.Drawing.Point(29, 3);
-            this.txtImage.Name = "txtImage";
-            this.txtImage.Size = new System.Drawing.Size(103, 96);
-            this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.txtImage.TabIndex = 0;
-            this.txtImage.TabStop = false;
-            this.txtImage.Click += new System.EventHandler(this.txtImage_Click);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.guna2Separator1);
@@ -73,6 +61,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(160, 82);
             this.panel1.TabIndex = 1;
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Location = new System.Drawing.Point(3, 3);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(154, 22);
+            this.guna2Separator1.TabIndex = 1;
             // 
             // lblName
             // 
@@ -84,12 +79,18 @@
             this.lblName.Text = "Product Name";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2Separator1
+            // txtImage
             // 
-            this.guna2Separator1.Location = new System.Drawing.Point(3, 3);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(154, 22);
-            this.guna2Separator1.TabIndex = 1;
+            this.txtImage.BorderRadius = 20;
+            this.txtImage.Image = global::PointofSale.Properties.Resources.balanced_diet1;
+            this.txtImage.ImageRotate = 0F;
+            this.txtImage.Location = new System.Drawing.Point(14, 13);
+            this.txtImage.Name = "txtImage";
+            this.txtImage.Size = new System.Drawing.Size(129, 83);
+            this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.txtImage.TabIndex = 0;
+            this.txtImage.TabStop = false;
+            this.txtImage.Click += new System.EventHandler(this.txtImage_Click);
             // 
             // ucProduct
             // 
@@ -98,8 +99,8 @@
             this.Name = "ucProduct";
             this.Size = new System.Drawing.Size(166, 190);
             this.guna2ShadowPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtImage)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtImage)).EndInit();
             this.ResumeLayout(false);
 
         }
