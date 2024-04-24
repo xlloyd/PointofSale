@@ -326,5 +326,17 @@ namespace PointofSale.Model
 
 
         }
+
+        private void guna2DataGridView1_CellFormatting_1(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            int count = 0;
+
+            foreach (DataGridViewRow row in guna2DataGridView1.Rows)
+            {
+                count++;
+                row.Cells[0].Value = count;
+            }
+
+        }
     }
 }
