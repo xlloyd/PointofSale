@@ -152,12 +152,12 @@ namespace PointofSale.Model
         {
             foreach (var item in CategoryPanel.Controls)
             {
-                if(item is Guna.UI2.WinForms.Guna2Button)
+                if (item is Guna.UI2.WinForms.Guna2Button b)
                 {
-                    Guna.UI2.WinForms.Guna2Button b = (Guna.UI2.WinForms.Guna2Button)item;
                     b.Checked = false;
                 }
             }
+
             foreach (var item in ProductPanel.Controls)
             {
                 var pro = (ucProduct)item;
