@@ -338,5 +338,6 @@ namespace PointofSale.Model
             }
 
         }
+
     }
 }
