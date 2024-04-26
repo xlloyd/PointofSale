@@ -144,6 +144,12 @@
     <Compile Include="View\frmCategoryView.Designer.cs">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmkitchenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmkitchenView.Designer.cs">
+      <DependentUpon>frmkitchenView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmProductView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmCategoryView.resx">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmkitchenView.resx">
+      <DependentUpon>frmkitchenView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmProductView.resx">
       <DependentUpon>frmProductView.cs</DependentUpon>

@@ -87,7 +87,7 @@
             this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.lblTotal.Location = new System.Drawing.Point(950, 15);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(60, 37);
+            this.lblTotal.Size = new System.Drawing.Size(91, 56);
             this.lblTotal.TabIndex = 11;
             this.lblTotal.Tag = "";
             this.lblTotal.Text = "0.00";
@@ -100,7 +100,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.label2.Location = new System.Drawing.Point(878, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 39);
+            this.label2.Size = new System.Drawing.Size(118, 56);
             this.label2.TabIndex = 10;
             this.label2.Text = "Total:";
             // 
@@ -174,7 +174,7 @@
             this.lblWaiter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.lblWaiter.Location = new System.Drawing.Point(803, 42);
             this.lblWaiter.Name = "lblWaiter";
-            this.lblWaiter.Size = new System.Drawing.Size(96, 39);
+            this.lblWaiter.Size = new System.Drawing.Size(137, 56);
             this.lblWaiter.TabIndex = 11;
             this.lblWaiter.Text = "Waiter";
             // 
@@ -185,7 +185,7 @@
             this.lblTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.lblTable.Location = new System.Drawing.Point(803, 17);
             this.lblTable.Name = "lblTable";
-            this.lblTable.Size = new System.Drawing.Size(81, 39);
+            this.lblTable.Size = new System.Drawing.Size(117, 56);
             this.lblTable.TabIndex = 10;
             this.lblTable.Text = "Table";
             // 
@@ -349,7 +349,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.label1.Location = new System.Drawing.Point(96, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 39);
+            this.label1.Size = new System.Drawing.Size(89, 56);
             this.label1.TabIndex = 1;
             this.label1.Text = "POS";
             // 
@@ -400,6 +400,7 @@
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.IconLeft = global::PointofSale.Properties.Resources.Search1;
             this.txtSearch.Location = new System.Drawing.Point(170, 114);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Search here";
@@ -455,6 +456,7 @@
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.RowHeadersWidth = 62;
             this.guna2DataGridView1.RowTemplate.Height = 35;
             this.guna2DataGridView1.Size = new System.Drawing.Size(381, 406);
             this.guna2DataGridView1.TabIndex = 10;
@@ -494,6 +496,7 @@
             // dgvvid
             // 
             this.dgvvid.HeaderText = "Id";
+            this.dgvvid.MinimumWidth = 8;
             this.dgvvid.Name = "dgvvid";
             this.dgvvid.ReadOnly = true;
             this.dgvvid.Visible = false;
@@ -502,6 +505,7 @@
             // 
             this.dgvName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dgvName.HeaderText = "Name";
+            this.dgvName.MinimumWidth = 8;
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
             // 

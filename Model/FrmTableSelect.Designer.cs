@@ -53,15 +53,15 @@
             this.label1.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(282, 19);
+            this.label1.Location = new System.Drawing.Point(252, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 48);
+            this.label1.Size = new System.Drawing.Size(308, 73);
             this.label1.TabIndex = 2;
             this.label1.Text = "SELECT TABLE";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 84);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(11, 84);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(776, 354);
             this.flowLayoutPanel1.TabIndex = 5;

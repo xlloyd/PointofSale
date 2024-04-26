@@ -41,10 +41,7 @@ namespace PointofSale.View
             GetData();
         }
 
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
 
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {

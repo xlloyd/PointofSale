@@ -53,7 +53,7 @@
             this.label1.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(282, 19);
+            this.label1.Location = new System.Drawing.Point(260, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(228, 48);
             this.label1.TabIndex = 2;
