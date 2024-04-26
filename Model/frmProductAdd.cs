@@ -36,7 +36,7 @@ namespace PointofSale.Model
         }
 
         string filepath;
-        byte[] imageByteArray;
+        Byte[] imageByteArray;
         private void BtnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();

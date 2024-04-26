@@ -56,6 +56,7 @@
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvproID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,7 +88,7 @@
             this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.lblTotal.Location = new System.Drawing.Point(950, 15);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(91, 56);
+            this.lblTotal.Size = new System.Drawing.Size(60, 37);
             this.lblTotal.TabIndex = 11;
             this.lblTotal.Tag = "";
             this.lblTotal.Text = "0.00";
@@ -100,7 +101,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.label2.Location = new System.Drawing.Point(878, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 56);
+            this.label2.Size = new System.Drawing.Size(82, 39);
             this.label2.TabIndex = 10;
             this.label2.Text = "Total:";
             // 
@@ -174,7 +175,7 @@
             this.lblWaiter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.lblWaiter.Location = new System.Drawing.Point(803, 42);
             this.lblWaiter.Name = "lblWaiter";
-            this.lblWaiter.Size = new System.Drawing.Size(137, 56);
+            this.lblWaiter.Size = new System.Drawing.Size(96, 39);
             this.lblWaiter.TabIndex = 11;
             this.lblWaiter.Text = "Waiter";
             // 
@@ -185,7 +186,7 @@
             this.lblTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.lblTable.Location = new System.Drawing.Point(803, 17);
             this.lblTable.Name = "lblTable";
-            this.lblTable.Size = new System.Drawing.Size(117, 56);
+            this.lblTable.Size = new System.Drawing.Size(81, 39);
             this.lblTable.TabIndex = 10;
             this.lblTable.Text = "Table";
             // 
@@ -349,7 +350,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.label1.Location = new System.Drawing.Point(96, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 56);
+            this.label1.Size = new System.Drawing.Size(62, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "POS";
             // 
@@ -439,6 +440,7 @@
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvSno,
             this.dgvvid,
+            this.dgvproID,
             this.dgvName,
             this.dgvQty,
             this.dgvPrice,
@@ -485,21 +487,24 @@
             // 
             // dgvSno
             // 
-            this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvSno.FillWeight = 70F;
             this.dgvSno.HeaderText = "Sr#";
-            this.dgvSno.MinimumWidth = 70;
             this.dgvSno.Name = "dgvSno";
             this.dgvSno.ReadOnly = true;
-            this.dgvSno.Width = 70;
             // 
             // dgvvid
             // 
-            this.dgvvid.HeaderText = "Id";
+            this.dgvvid.HeaderText = "id";
             this.dgvvid.MinimumWidth = 8;
             this.dgvvid.Name = "dgvvid";
             this.dgvvid.ReadOnly = true;
             this.dgvvid.Visible = false;
+            // 
+            // dgvproID
+            // 
+            this.dgvproID.HeaderText = "ProductID";
+            this.dgvproID.Name = "dgvproID";
+            this.dgvproID.ReadOnly = true;
+            this.dgvproID.Visible = false;
             // 
             // dgvName
             // 
@@ -593,6 +598,7 @@
         public Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvvid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvproID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;

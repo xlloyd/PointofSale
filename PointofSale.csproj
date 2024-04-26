@@ -182,9 +182,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmPOS.resx">
       <DependentUpon>frmPOS.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmProductAdd.resx">
       <DependentUpon>frmProductAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmStaffAdd.resx">
       <DependentUpon>frmStaffAdd.cs</DependentUpon>

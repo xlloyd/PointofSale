@@ -136,7 +136,7 @@
             // 
             // dgvvid
             // 
-            this.dgvvid.HeaderText = "Id";
+            this.dgvvid.HeaderText = "id";
             this.dgvvid.Name = "dgvvid";
             this.dgvvid.ReadOnly = true;
             this.dgvvid.Visible = false;

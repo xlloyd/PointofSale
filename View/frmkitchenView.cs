@@ -44,36 +44,37 @@ namespace PointofSale.View
                 p1.FlowDirection = FlowDirection.TopDown;
                 p1.BorderStyle = BorderStyle.FixedSingle;
                 p1.Margin = new Padding(10, 10, 10, 10);
+               
 
 
                 FlowLayoutPanel p2 = new FlowLayoutPanel();
                 p2 = new FlowLayoutPanel();
-                p2.BackColor = Color.FromArgb(175, 130, 96);
+                p2.BackColor = Color.FromArgb(128, 61, 59);
                 p2.AutoSize = true;
                 p2.Width = 230;
                 p2.Height = 125;
                 p2.FlowDirection = FlowDirection.TopDown;
-                p2.BorderStyle = BorderStyle.FixedSingle;
                 p2.Margin = new Padding(0, 0, 0, 0);
+               
 
                 Label lb1 = new Label();
                 lb1.ForeColor = Color.White;
-                lb1.Margin = new Padding(10, 10, 3, 10);
+                lb1.Margin = new Padding(10, 10, 3, 0);
                 lb1.AutoSize = true;
 
                 Label lb2 = new Label();
                 lb2.ForeColor = Color.White;
-                lb2.Margin = new Padding(10, 10, 3, 10);
+                lb2.Margin = new Padding(10, 5, 3, 0);
                 lb2.AutoSize = true;
 
                 Label lb3 = new Label();
                 lb3.ForeColor = Color.White;
-                lb3.Margin = new Padding(10, 10, 3, 10);
+                lb3.Margin = new Padding(10, 5, 3, 0);
                 lb3.AutoSize = true;
 
                 Label lb4 = new Label();
                 lb4.ForeColor = Color.White;
-                lb4.Margin = new Padding(10, 10, 3, 10);
+                lb4.Margin = new Padding(10, 5, 3, 10);
                 lb4.AutoSize = true;
 
                 lb1.Text = "Table : " + dt1.Rows[i]["TableName"].ToString();
@@ -90,8 +91,13 @@ namespace PointofSale.View
 
                 int mid = 0;
                 mid = Convert.ToInt32(dt1.Rows[i]["MainID"].ToString());
+                
+                string qry2 = @"SELECT * FROM tblMain m 
+                 INNER JOIN tblDetails d ON m.MainID = d.MainID 
+                 INNER JOIN products p ON p.pID = d.proID 
+                 WHERE m.MainID = " + mid + "";
 
-                string qry2 = @"Select * from tblMain m inner join tblDetails d on m.MainID = d.MainID inner join products p on pID = d.proID Where m.MainID = "+mid+"";
+
 
 
                 SqlCommand cmd2 = new SqlCommand(qry2, MainClass.con);
@@ -99,10 +105,10 @@ namespace PointofSale.View
                 SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
                 da2.Fill(dt2);
 
-                for (int j = 0; i < dt2.Rows.Count; i++)
+                for (int j = 0; j < dt2.Rows.Count; j++)
                 {
                     Label lb5 = new Label();
-                    lb5.ForeColor = Color.White;
+                    lb5.ForeColor = Color.Black;
                     lb5.Margin = new Padding(10, 10, 3, 10);
                     lb5.AutoSize = true;
 
@@ -114,12 +120,13 @@ namespace PointofSale.View
                 }
 
                 Guna.UI2.WinForms.Guna2Button b = new Guna.UI2.WinForms.Guna2Button();
-                b.AutoRoundedCorners = true;
+                b.AutoRoundedCorners = true;                
                 b.Size = new Size(100, 35);
-                b.FillColor = Color.FromArgb(241, 85, 126);
+                b.FillColor = Color.FromArgb(175, 130, 96);
                 b.Margin = new Padding(30, 5, 3, 10);
                 b.Text = "Complete";
                 b.Tag = dt1.Rows[i]["MainID"].ToString();
+                b.Padding = new Padding(10, 3, 10, 3);
 
                 b.Click += new EventHandler(b_click);
 
