@@ -378,6 +378,7 @@
     <None Include="Resources\bin.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\printer.png" />
     <None Include="Resources\no-photos.png" />
     <None Include="Resources\no-pictures.png" />
     <None Include="Resources\table.png" />
@@ -403,6 +404,9 @@
     <None Include="Resources\ %282%29.png" />
     <Content Include="Resources\newproduct.png" />
     <None Include="Resources\pos-terminalfillcolor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
