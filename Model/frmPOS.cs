@@ -22,7 +22,11 @@ namespace PointofSale.Model
         }
 
         public int MainID = 0;
-        public string OrderType;
+        public string OrderType = "";
+        public int driverID = 0;
+        public string customerName = "";
+        public string customerPhone = "";
+
 
         private void guna2ShadowPanel3_Paint(object sender, PaintEventArgs e)
         {
@@ -198,6 +202,22 @@ namespace PointofSale.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             OrderType = "Delivery";
+
+            frmAddCustomer frm = new frmAddCustomer();
+            frm.mainID = MainID;
+            frm.orderType = OrderType;
+            MainClass.BlurBlackground(frm);
+
+            if (frm.txtName.Text != "")
+            {
+                driverID = frm.driverID;
+                lblDriverName.Text = "Customer Name: " + frm.txtName.Text + " Phone: " + frm.txtPhone.Text + " Driver: " + frm.cbDriver.Text;
+                lblDriverName.Visible = true;
+                customerName = frm.txtName.Text;
+                customerPhone = frm.txtPhone.Text;
+
+
+            }
         }
 
         private void btnTakeout_Click(object sender, EventArgs e)
@@ -207,11 +227,28 @@ namespace PointofSale.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             OrderType = "Take-Out";
+
+            frmAddCustomer frm = new frmAddCustomer();
+            frm.mainID = MainID;
+            frm.orderType = OrderType;
+            MainClass.BlurBlackground(frm);
+
+            if (frm.txtName.Text !="")
+            {
+                driverID = frm.driverID;
+                lblDriverName.Text = "Customer Name: " + frm.txtName.Text + " Phone: " + frm.txtPhone.Text;
+                lblDriverName.Visible = true;
+                customerName = frm.txtName.Text;
+                customerPhone = frm.txtPhone.Text;
+
+
+            }
         }
 
         private void btnDineIn_Click(object sender, EventArgs e)
         {
             OrderType = "Dine-In";
+            lblDriverName.Visible = false;
             FrmTableSelect frm = new FrmTableSelect();
             MainClass.BlurBlackground(frm);
             if (frm.TableName != "")
@@ -248,7 +285,7 @@ namespace PointofSale.Model
 
             if (MainID == 0)
             {
-                qry1 = @"Insert into tblMain Values (@aDate, @Time, @TableName, @WaiterName, @status, @orderType, @total, @received, @change); Select SCOPE_IDENTITY()";
+                qry1 = @"Insert into tblMain Values (@aDate, @Time, @TableName, @WaiterName, @status, @orderType, @total, @received, @change, @driverID, @CustName, @CustPhone); Select SCOPE_IDENTITY()";
             }
             else
             {
@@ -266,6 +303,10 @@ namespace PointofSale.Model
             cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text));
             cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
             cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
+            cmd.Parameters.AddWithValue("@driverID", driverID);
+            cmd.Parameters.AddWithValue("@CustName", customerName);
+            cmd.Parameters.AddWithValue("@CustPhone", customerPhone);
+
 
             if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
             if (MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); } else { cmd.ExecuteNonQuery(); }
@@ -305,6 +346,7 @@ namespace PointofSale.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             lblTotal.Text = "0.00";
+            lblDriverName.Text = "";
             guna2MessageDialog1.Show("Saved Successfully...");
             guna2DataGridView1.Rows.Clear();
         }
@@ -331,6 +373,7 @@ namespace PointofSale.Model
             if (frm.MainID > 0)
             {
                 id = frm.MainID;
+                MainID = frm.MainID;
                 LoadEntries();
             }
         }
@@ -407,6 +450,86 @@ namespace PointofSale.Model
             guna2DataGridView1.Rows.Clear();
 
 
+        }
+
+        private void btnHold_Click(object sender, EventArgs e)
+        {
+            string qry1 = "";
+            string qry2 = "";
+
+            int detailID = 0;
+
+            if (OrderType == "")
+            {
+                guna2MessageDialog1.Show("Please select order type");
+                return;
+            }
+
+            if (MainID == 0)
+            {
+                qry1 = @"Insert into tblMain Values (@aDate, @Time, @TableName, @WaiterName, @status, @orderType, @total, @received, @change, @driverID, @CustName, @CustPhone); Select SCOPE_IDENTITY()";
+            }
+            else
+            {
+                qry1 = @"Update tblMain Set status = @status, total = @total, received = @received, change = @change where MainID = @ID";
+            }
+
+            SqlCommand cmd = new SqlCommand(qry1, MainClass.con);
+            cmd.Parameters.AddWithValue("@ID", MainID);
+            cmd.Parameters.AddWithValue("@aDate", Convert.ToDateTime(DateTime.Now.Date));
+            cmd.Parameters.AddWithValue("@Time", DateTime.Now.ToShortTimeString());
+            cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
+            cmd.Parameters.AddWithValue("@WaiterName", lblWaiter.Text);
+            cmd.Parameters.AddWithValue("@status", "Hold");
+            cmd.Parameters.AddWithValue("@orderType", OrderType);
+            cmd.Parameters.AddWithValue("@total", Convert.ToDouble(lblTotal.Text));
+            cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
+            cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
+            cmd.Parameters.AddWithValue("@driverID", driverID);
+            cmd.Parameters.AddWithValue("@CustName", customerName);
+            cmd.Parameters.AddWithValue("@CustPhone", customerPhone);
+
+            if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
+            if (MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); } else { cmd.ExecuteNonQuery(); }
+            if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
+
+            foreach (DataGridViewRow row in guna2DataGridView1.Rows)
+            {
+                detailID = Convert.ToInt32(row.Cells["dgvvid"].Value);
+
+                if (detailID == 0)
+                {
+                    qry2 = @" Insert into tblDetails Values (@MainID, @proID, @qty, @price, @amount) ";
+                }
+                else
+                {
+                    qry2 = @" Update tblDetails Set proID = @proID, qty = @qty, price = @price, amount = @amount where DetailID = @ID ";
+                }
+
+                SqlCommand cmd2 = new SqlCommand(qry2, MainClass.con);
+                cmd2.Parameters.AddWithValue("@ID", detailID);
+                cmd2.Parameters.AddWithValue("@MainID", MainID);
+                cmd2.Parameters.AddWithValue("@proID", Convert.ToInt32(row.Cells["dgvproID"].Value));
+                cmd2.Parameters.AddWithValue("@qty", Convert.ToInt32(row.Cells["dgvQty"].Value));
+                cmd2.Parameters.AddWithValue("@price", Convert.ToDouble(row.Cells["dgvPrice"].Value));
+                cmd2.Parameters.AddWithValue("@amount", Convert.ToDouble(row.Cells["dgvAmount"].Value));
+
+                if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
+                cmd2.ExecuteNonQuery();
+                if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
+            }
+
+            // Moved outside the foreach loop
+            MainID = 0;
+            detailID = 0;
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "0.00";
+            lblDriverName.Text = "";
+            guna2MessageDialog1.Show("Saved Successfully...");
+            guna2DataGridView1.Rows.Clear();
         }
     }
 }

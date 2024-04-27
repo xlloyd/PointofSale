@@ -89,6 +89,7 @@
             "Waiter",
             "Cleaning",
             "Manager",
+            "Driver",
             "Other"});
             this.cbRole.Location = new System.Drawing.Point(12, 178);
             this.cbRole.Name = "cbRole";

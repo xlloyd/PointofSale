@@ -76,6 +76,12 @@
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MainClass.cs" />
+    <Compile Include="Model\frmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmAddCustomer.Designer.cs">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\frmBills.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmAddCustomer.resx">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmBills.resx">
       <DependentUpon>frmBills.cs</DependentUpon>
@@ -391,6 +400,7 @@
     <None Include="Resources\groupfillcolor1.png" />
     <None Include="Resources\checklist.png" />
     <None Include="Resources\cuba-peso-currency-symbol.png" />
+    <None Include="Resources\ %282%29.png" />
     <Content Include="Resources\newproduct.png" />
     <None Include="Resources\pos-terminalfillcolor1.png" />
   </ItemGroup>
