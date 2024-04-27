@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -196,7 +197,7 @@ namespace PointofSale.Model
             lblWaiter.Text = "";
             lblTable.Visible = false;
             lblWaiter.Visible = false;
-            OrderType = "Delevery";
+            OrderType = "Delivery";
         }
 
         private void btnTakeout_Click(object sender, EventArgs e)
@@ -320,5 +321,52 @@ namespace PointofSale.Model
 
         }
 
+        public int id = 0;
+        private void btnBillList_Click(object sender, EventArgs e)
+        {
+            frmBills frm = new frmBills();
+            MainClass.BlurBlackground(frm);
+
+            if (frm.MainID > 0)
+            {
+                id = frm.MainID;
+                LoadEntries();
+            }
+        }
+
+       private void LoadEntries()
+        {
+            string qry = @"SELECT * FROM tblMain m 
+                 INNER JOIN tblDetails d ON m.MainID = d.MainID 
+                 INNER JOIN products p ON p.pID = d.proID 
+                 WHERE m.MainID = " + id + "";
+
+            SqlCommand cmd2 = new SqlCommand(qry, MainClass.con);
+            DataTable dt2 = new DataTable();
+            SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
+            da2.Fill(dt2);
+            guna2DataGridView1.Rows.Clear();
+
+            foreach (DataRow item in dt2.Rows) 
+            {
+                string detailid = item["DetailID"].ToString();
+                string proName = item["pName"].ToString();
+                string proid = item["proID"].ToString();
+                string qty = item["qty"].ToString();
+                string price = item["price"].ToString();
+                string amount = item["amount"].ToString();
+                
+
+                object[] obj = { 0, detailid, proid,proName, qty,price,amount };
+                guna2DataGridView1.Rows.Add(obj);
+            }
+
+            GetTotal();
+        }
+
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

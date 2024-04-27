@@ -130,6 +130,9 @@
   <data name="padlock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\padlock1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="no-pictures" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no-pictures.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dine-inwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dine-inwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,17 +148,20 @@
   <data name="take-awaywhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\take-awaywhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="padlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\padlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="categoriesfillcolor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\categoriesfillcolor1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="categoriesfillcolor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\categoriesfillcolor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="balanced-diet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\balanced-diet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="no-photos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no-photos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="packagefillcolor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\packagefillcolor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="newwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\newwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,14 +175,17 @@
   <data name="newfill" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\newfill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reportfillcolor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reportfillcolor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fast-food (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fast-food (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="data-analyticswhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\data-analyticswhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,14 +196,20 @@
   <data name="holdwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\holdwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fast-food (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fast-food (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="padlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\padlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="groupfillcolor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\groupfillcolor1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reportwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reportwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="balanced-diet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\balanced-diet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Search1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -219,9 +234,6 @@
   </data>
   <data name="categorieswhite1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\categorieswhite1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fast-food (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fast-food (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="motorbikefill" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\motorbikefill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,10 +271,10 @@
   <data name="cellsfillcolor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cellsfillcolor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="packagefillcolor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\packagefillcolor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fast-food (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fast-food (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="table" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="checklist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checklist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

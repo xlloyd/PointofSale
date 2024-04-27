@@ -30,24 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStaffAdd));
             this.label3 = new System.Windows.Forms.Label();
-            this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.TextName = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbRole = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.TextName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ShadowPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(27, 21);
+            this.label1.Location = new System.Drawing.Point(189, 21);
             this.label1.Size = new System.Drawing.Size(218, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "STAFF DETAILS";
             // 
             // guna2ShadowPanel2
             // 
+            this.guna2ShadowPanel2.Controls.Add(this.guna2ControlBox1);
             this.guna2ShadowPanel2.Size = new System.Drawing.Size(823, 78);
+            this.guna2ShadowPanel2.Controls.SetChildIndex(this.label1, 0);
+            this.guna2ShadowPanel2.Controls.SetChildIndex(this.guna2ControlBox1, 0);
             // 
             // label3
             // 
@@ -58,29 +62,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Phone";
             // 
-            // txtPhone
-            // 
-            this.txtPhone.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPhone.BorderRadius = 10;
-            this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhone.DefaultText = "";
-            this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPhone.IconLeft")));
-            this.txtPhone.Location = new System.Drawing.Point(289, 109);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.PasswordChar = '\0';
-            this.txtPhone.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPhone.PlaceholderText = "Enter the number...";
-            this.txtPhone.SelectedText = "";
-            this.txtPhone.Size = new System.Drawing.Size(243, 30);
-            this.txtPhone.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -89,30 +70,6 @@
             this.label2.Size = new System.Drawing.Size(51, 23);
             this.label2.TabIndex = 9;
             this.label2.Text = "Name";
-            // 
-            // TextName
-            // 
-            this.TextName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TextName.BorderRadius = 10;
-            this.TextName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextName.DefaultText = "";
-            this.TextName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextName.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextName.IconLeft")));
-            this.TextName.Location = new System.Drawing.Point(12, 109);
-            this.TextName.Modified = true;
-            this.TextName.Name = "TextName";
-            this.TextName.PasswordChar = '\0';
-            this.TextName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TextName.PlaceholderText = "Enter the name...";
-            this.TextName.SelectedText = "";
-            this.TextName.Size = new System.Drawing.Size(243, 30);
-            this.TextName.TabIndex = 0;
             // 
             // cbRole
             // 
@@ -147,10 +104,68 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Role";
             // 
+            // TextName
+            // 
+            this.TextName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TextName.BorderRadius = 10;
+            this.TextName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextName.DefaultText = "";
+            this.TextName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextName.IconLeft = ((System.Drawing.Image)(resources.GetObject("TextName.IconLeft")));
+            this.TextName.Location = new System.Drawing.Point(12, 109);
+            this.TextName.Name = "TextName";
+            this.TextName.PasswordChar = '\0';
+            this.TextName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TextName.PlaceholderText = "Enter the name...";
+            this.TextName.SelectedText = "";
+            this.TextName.Size = new System.Drawing.Size(243, 30);
+            this.TextName.TabIndex = 0;
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPhone.BorderRadius = 10;
+            this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhone.DefaultText = "";
+            this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhone.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPhone.IconLeft")));
+            this.txtPhone.Location = new System.Drawing.Point(289, 109);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.PasswordChar = '\0';
+            this.txtPhone.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPhone.PlaceholderText = "Enter the number...";
+            this.txtPhone.SelectedText = "";
+            this.txtPhone.Size = new System.Drawing.Size(243, 30);
+            this.txtPhone.TabIndex = 1;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.BorderRadius = 10;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(130)))), ((int)(((byte)(96)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(546, 21);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(31, 21);
+            this.guna2ControlBox1.TabIndex = 4;
+            // 
             // frmStaffAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(574, 315);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbRole);
@@ -183,5 +198,6 @@
         public Guna.UI2.WinForms.Guna2TextBox TextName;
         private System.Windows.Forms.Label label4;
         public Guna.UI2.WinForms.Guna2ComboBox cbRole;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

@@ -437,9 +437,9 @@
             // 
             // ControlsPanel
             // 
-            this.ControlsPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ControlsPanel.BackColor = System.Drawing.Color.Snow;
             this.ControlsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ControlsPanel.FillColor = System.Drawing.Color.White;
+            this.ControlsPanel.FillColor = System.Drawing.Color.Linen;
             this.ControlsPanel.Location = new System.Drawing.Point(163, 68);
             this.ControlsPanel.Name = "ControlsPanel";
             this.ControlsPanel.ShadowColor = System.Drawing.Color.Black;
@@ -451,7 +451,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(1003, 657);
             this.Controls.Add(this.ControlsPanel);
             this.Controls.Add(this.guna2ShadowPanel2);

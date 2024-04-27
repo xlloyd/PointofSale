@@ -40,7 +40,7 @@
             // btnClose
             // 
             this.btnClose.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
-            this.btnClose.BorderRadius = 20;
+            this.btnClose.BorderRadius = 10;
             this.btnClose.BorderThickness = 2;
             this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -54,7 +54,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.BorderRadius = 20;
+            this.btnSave.BorderRadius = 10;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -76,7 +76,7 @@
             // 
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.Controls.Add(this.label1);
-            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(130)))), ((int)(((byte)(96)))));
+            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             resources.ApplyResources(this.guna2ShadowPanel2, "guna2ShadowPanel2");
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
@@ -94,7 +94,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.SeaShell;
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.guna2ShadowPanel2);

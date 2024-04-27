@@ -34,9 +34,11 @@ namespace PointofSale.Model
                 b.Text = row["tname"].ToString();
                 b.Width = 150;
                 b.Height = 50;
-                b.FillColor = Color.FromArgb(175, 130, 96);
+                b.FillColor = Color.FromArgb(128, 61, 59);
                 b.HoverState.FillColor = Color.FromArgb(237, 217, 194);
                 b.BorderRadius = 10;
+
+                b.Font = new Font(b.Font, FontStyle.Bold);
 
                 b.Click += new EventHandler(b_Click);
                 flowLayoutPanel1.Controls.Add(b);

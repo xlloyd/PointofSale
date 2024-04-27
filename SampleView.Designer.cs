@@ -31,9 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.btnAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -66,6 +66,15 @@
             this.guna2Separator1.Size = new System.Drawing.Size(687, 18);
             this.guna2Separator1.TabIndex = 4;
             // 
+            // guna2MessageDialog1
+            // 
+            this.guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.guna2MessageDialog1.Caption = "question";
+            this.guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question;
+            this.guna2MessageDialog1.Parent = null;
+            this.guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
+            this.guna2MessageDialog1.Text = null;
+            // 
             // btnAdd
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -85,34 +94,29 @@
             // 
             // txtSearch
             // 
+            this.txtSearch.BorderColor = System.Drawing.Color.Black;
             this.txtSearch.BorderRadius = 15;
+            this.txtSearch.BorderThickness = 2;
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearch.DefaultText = "";
             this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.txtSearch.IconLeft = global::PointofSale.Properties.Resources.Search1;
             this.txtSearch.Location = new System.Drawing.Point(73, 100);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "Search here";
+            this.txtSearch.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSearch.PlaceholderText = "Search here...";
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(309, 36);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
-            // guna2MessageDialog1
-            // 
-            this.guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
-            this.guna2MessageDialog1.Caption = "question";
-            this.guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question;
-            this.guna2MessageDialog1.Parent = null;
-            this.guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
-            this.guna2MessageDialog1.Text = null;
             // 
             // SampleView
             // 

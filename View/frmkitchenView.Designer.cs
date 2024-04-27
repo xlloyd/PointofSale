@@ -55,7 +55,7 @@
             // frmkitchenView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

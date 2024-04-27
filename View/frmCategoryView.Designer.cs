@@ -47,7 +47,6 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(57, 57);
@@ -56,7 +55,8 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(302, 27);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(301, 25);
             this.label2.Size = new System.Drawing.Size(202, 42);
             this.label2.Text = "CATEGORY LIST";
             // 
@@ -94,7 +94,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(64, 191);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(64, 182);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
@@ -123,7 +123,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
-            
             // 
             // dgvSno
             // 
@@ -185,6 +184,7 @@
             // frmCategoryView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "frmCategoryView";

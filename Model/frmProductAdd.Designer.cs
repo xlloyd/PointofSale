@@ -33,23 +33,27 @@
             this.cbCat = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.TextName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.BtnBrowse = new Guna.UI2.WinForms.Guna2Button();
+            this.txtImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(270, 21);
+            this.label1.Location = new System.Drawing.Point(301, 25);
             this.label1.Size = new System.Drawing.Size(267, 48);
             this.label1.Text = "PRODUCT DETAILS";
             // 
             // guna2ShadowPanel2
             // 
+            this.guna2ShadowPanel2.Controls.Add(this.guna2ControlBox1);
             this.guna2ShadowPanel2.Size = new System.Drawing.Size(860, 93);
+            this.guna2ShadowPanel2.Controls.SetChildIndex(this.label1, 0);
+            this.guna2ShadowPanel2.Controls.SetChildIndex(this.guna2ControlBox1, 0);
             // 
             // label4
             // 
@@ -96,6 +100,59 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Price";
             // 
+            // BtnBrowse
+            // 
+            this.BtnBrowse.BorderRadius = 10;
+            this.BtnBrowse.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBrowse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBrowse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnBrowse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnBrowse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
+            this.BtnBrowse.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold);
+            this.BtnBrowse.ForeColor = System.Drawing.Color.White;
+            this.BtnBrowse.Location = new System.Drawing.Point(618, 263);
+            this.BtnBrowse.Name = "BtnBrowse";
+            this.BtnBrowse.Size = new System.Drawing.Size(139, 28);
+            this.BtnBrowse.TabIndex = 21;
+            this.BtnBrowse.Text = "Browse";
+            this.BtnBrowse.Click += new System.EventHandler(this.BtnBrowse_Click);
+            // 
+            // txtImage
+            // 
+            this.txtImage.BackColor = System.Drawing.Color.White;
+            this.txtImage.Image = global::PointofSale.Properties.Resources.no_photos;
+            this.txtImage.ImageRotate = 0F;
+            this.txtImage.Location = new System.Drawing.Point(600, 112);
+            this.txtImage.Name = "txtImage";
+            this.txtImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.txtImage.Size = new System.Drawing.Size(171, 145);
+            this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.txtImage.TabIndex = 20;
+            this.txtImage.TabStop = false;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPrice.BorderRadius = 10;
+            this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrice.DefaultText = "";
+            this.txtPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrice.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPrice.IconLeft")));
+            this.txtPrice.Location = new System.Drawing.Point(305, 123);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.PasswordChar = '\0';
+            this.txtPrice.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPrice.PlaceholderText = "Enter the price...";
+            this.txtPrice.SelectedText = "";
+            this.txtPrice.Size = new System.Drawing.Size(243, 30);
+            this.txtPrice.TabIndex = 19;
+            // 
             // TextName
             // 
             this.TextName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -119,63 +176,22 @@
             this.TextName.Size = new System.Drawing.Size(243, 30);
             this.TextName.TabIndex = 18;
             // 
-            // txtPrice
+            // guna2ControlBox1
             // 
-            this.txtPrice.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPrice.BorderRadius = 10;
-            this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrice.DefaultText = "";
-            this.txtPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrice.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtPrice.IconLeft")));
-            this.txtPrice.Location = new System.Drawing.Point(305, 123);
-            this.txtPrice.Modified = true;
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.PasswordChar = '\0';
-            this.txtPrice.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPrice.PlaceholderText = "Enter the price...";
-            this.txtPrice.SelectedText = "";
-            this.txtPrice.Size = new System.Drawing.Size(243, 30);
-            this.txtPrice.TabIndex = 19;
-            // 
-            // txtImage
-            // 
-            this.txtImage.Image = global::PointofSale.Properties.Resources.newproduct;
-            this.txtImage.ImageRotate = 0F;
-            this.txtImage.Location = new System.Drawing.Point(586, 103);
-            this.txtImage.Name = "txtImage";
-            this.txtImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.txtImage.Size = new System.Drawing.Size(184, 138);
-            this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.txtImage.TabIndex = 20;
-            this.txtImage.TabStop = false;
-            // 
-            // BtnBrowse
-            // 
-            this.BtnBrowse.BorderRadius = 10;
-            this.BtnBrowse.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnBrowse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnBrowse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnBrowse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnBrowse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
-            this.BtnBrowse.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold);
-            this.BtnBrowse.ForeColor = System.Drawing.Color.White;
-            this.BtnBrowse.Location = new System.Drawing.Point(608, 256);
-            this.BtnBrowse.Name = "BtnBrowse";
-            this.BtnBrowse.Size = new System.Drawing.Size(145, 31);
-            this.BtnBrowse.TabIndex = 21;
-            this.BtnBrowse.Text = "Browse";
-            this.BtnBrowse.Click += new System.EventHandler(this.BtnBrowse_Click);
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.BorderRadius = 10;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(130)))), ((int)(((byte)(96)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(788, 24);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(31, 21);
+            this.guna2ControlBox1.TabIndex = 4;
             // 
             // frmProductAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(816, 330);
             this.Controls.Add(this.BtnBrowse);
             this.Controls.Add(this.txtImage);
@@ -215,5 +231,6 @@
         public Guna.UI2.WinForms.Guna2TextBox txtPrice;
         private Guna.UI2.WinForms.Guna2CirclePictureBox txtImage;
         private Guna.UI2.WinForms.Guna2Button BtnBrowse;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

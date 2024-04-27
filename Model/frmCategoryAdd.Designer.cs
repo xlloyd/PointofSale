@@ -36,8 +36,7 @@
             // 
             // label1
             // 
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(114, 21);
+            this.label1.Location = new System.Drawing.Point(109, 21);
             this.label1.Size = new System.Drawing.Size(236, 48);
             this.label1.Text = "ADD CATEGORY";
             // 
@@ -50,7 +49,7 @@
             this.TextName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextName.BorderRadius = 10;
             this.TextName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextName.DefaultText = "";
+            this.TextName.DefaultText = "Enter Category...";
             this.TextName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TextName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -64,7 +63,7 @@
             this.TextName.PasswordChar = '\0';
             this.TextName.PlaceholderText = "Name";
             this.TextName.SelectedText = "";
-            this.TextName.Size = new System.Drawing.Size(329, 50);
+            this.TextName.Size = new System.Drawing.Size(322, 32);
             this.TextName.TabIndex = 0;
             // 
             // label2
@@ -80,6 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(432, 317);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TextName);

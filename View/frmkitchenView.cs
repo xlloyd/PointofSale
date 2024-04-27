@@ -64,17 +64,17 @@ namespace PointofSale.View
 
                 Label lb2 = new Label();
                 lb2.ForeColor = Color.White;
-                lb2.Margin = new Padding(10, 5, 3, 0);
+                lb2.Margin = new Padding(10, 0, 3, 0);
                 lb2.AutoSize = true;
 
                 Label lb3 = new Label();
                 lb3.ForeColor = Color.White;
-                lb3.Margin = new Padding(10, 5, 3, 0);
+                lb3.Margin = new Padding(10, 0, 3, 0);
                 lb3.AutoSize = true;
 
                 Label lb4 = new Label();
                 lb4.ForeColor = Color.White;
-                lb4.Margin = new Padding(10, 5, 3, 10);
+                lb4.Margin = new Padding(10, 0, 3, 10);
                 lb4.AutoSize = true;
 
                 lb1.Text = "Table : " + dt1.Rows[i]["TableName"].ToString();
@@ -109,12 +109,12 @@ namespace PointofSale.View
                 {
                     Label lb5 = new Label();
                     lb5.ForeColor = Color.Black;
-                    lb5.Margin = new Padding(10, 10, 3, 10);
+                    lb5.Margin = new Padding(0);
                     lb5.AutoSize = true;
 
                     int no = j + 1;
 
-                    lb5.Text = " " + no + " " + dt2.Rows[j]["pName"].ToString() + " " + dt2.Rows[j]["qty"].ToString();
+                    lb5.Text = "" + + no + ".) " + dt2.Rows[j]["pName"].ToString() + "  " + dt2.Rows[j]["qty"].ToString();
 
                     p1.Controls.Add(lb5);
                 }

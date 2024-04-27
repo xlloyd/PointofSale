@@ -76,11 +76,23 @@
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MainClass.cs" />
+    <Compile Include="Model\frmBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmBills.Designer.cs">
+      <DependentUpon>frmBills.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\frmCategoryAdd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Model\frmCategoryAdd.Designer.cs">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmCheckout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmCheckout.Designer.cs">
+      <DependentUpon>frmCheckout.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\frmPOS.cs">
       <SubType>Form</SubType>
@@ -177,8 +189,14 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmBills.resx">
+      <DependentUpon>frmBills.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\frmCategoryAdd.resx">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmCheckout.resx">
+      <DependentUpon>frmCheckout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmPOS.resx">
       <DependentUpon>frmPOS.cs</DependentUpon>
@@ -351,6 +369,8 @@
     <None Include="Resources\bin.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\no-photos.png" />
+    <None Include="Resources\no-pictures.png" />
     <None Include="Resources\table.png" />
     <None Include="Resources\balanced-diet1.png" />
     <None Include="Resources\newwhite.png" />
@@ -368,6 +388,8 @@
     <None Include="Resources\Dine-inwhite.png" />
     <None Include="Resources\fast-food %282%29.png" />
     <None Include="Resources\fast-food %281%29.png" />
+    <None Include="Resources\groupfillcolor1.png" />
+    <None Include="Resources\checklist.png" />
     <Content Include="Resources\newproduct.png" />
     <None Include="Resources\pos-terminalfillcolor1.png" />
   </ItemGroup>

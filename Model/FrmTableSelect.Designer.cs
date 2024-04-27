@@ -31,19 +31,21 @@
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ShadowPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel2
             // 
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Controls.Add(this.guna2ControlBox1);
             this.guna2ShadowPanel2.Controls.Add(this.label1);
             this.guna2ShadowPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(130)))), ((int)(((byte)(96)))));
+            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.guna2ShadowPanel2.Location = new System.Drawing.Point(0, 0);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(800, 78);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(607, 78);
             this.guna2ShadowPanel2.TabIndex = 4;
             // 
             // label1
@@ -53,9 +55,9 @@
             this.label1.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(252, 9);
+            this.label1.Location = new System.Drawing.Point(203, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(308, 73);
+            this.label1.Size = new System.Drawing.Size(205, 48);
             this.label1.TabIndex = 2;
             this.label1.Text = "SELECT TABLE";
             // 
@@ -63,14 +65,25 @@
             // 
             this.flowLayoutPanel1.Location = new System.Drawing.Point(11, 84);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(776, 354);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(584, 211);
             this.flowLayoutPanel1.TabIndex = 5;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.BorderRadius = 10;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(130)))), ((int)(((byte)(96)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(564, 12);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(31, 21);
+            this.guna2ControlBox1.TabIndex = 4;
             // 
             // FrmTableSelect
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(607, 307);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.guna2ShadowPanel2);
             this.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -90,5 +103,6 @@
         public Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }
