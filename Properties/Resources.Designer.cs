@@ -193,6 +193,16 @@ namespace PointofSale.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cuba_peso_currency_symbol {
+            get {
+                object obj = ResourceManager.GetObject("cuba-peso-currency-symbol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap data_analyticsfillcolor {
             get {
                 object obj = ResourceManager.GetObject("data-analyticsfillcolor", resourceCulture);

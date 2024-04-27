@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCheckout));
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TxtBillAmount = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtRecieved = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnChange = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtChange = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.TxtBillAmount = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ShadowPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,29 +67,6 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Bill Amount";
             // 
-            // TxtBillAmount
-            // 
-            this.TxtBillAmount.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TxtBillAmount.BorderRadius = 10;
-            this.TxtBillAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBillAmount.DefaultText = "";
-            this.TxtBillAmount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtBillAmount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtBillAmount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBillAmount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBillAmount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBillAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TxtBillAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBillAmount.IconLeft = ((System.Drawing.Image)(resources.GetObject("TxtBillAmount.IconLeft")));
-            this.TxtBillAmount.Location = new System.Drawing.Point(48, 122);
-            this.TxtBillAmount.Name = "TxtBillAmount";
-            this.TxtBillAmount.PasswordChar = '\0';
-            this.TxtBillAmount.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TxtBillAmount.PlaceholderText = "Amount...";
-            this.TxtBillAmount.SelectedText = "";
-            this.TxtBillAmount.Size = new System.Drawing.Size(243, 30);
-            this.TxtBillAmount.TabIndex = 12;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -110,41 +86,45 @@
             this.txtRecieved.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtRecieved.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtRecieved.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRecieved.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRecieved.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtRecieved.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRecieved.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtRecieved.IconLeft")));
+            this.txtRecieved.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
+            this.txtRecieved.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRecieved.ForeColor = System.Drawing.Color.Black;
+            this.txtRecieved.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
+            this.txtRecieved.IconLeft = global::PointofSale.Properties.Resources.cuba_peso_currency_symbol;
             this.txtRecieved.Location = new System.Drawing.Point(325, 122);
             this.txtRecieved.Name = "txtRecieved";
             this.txtRecieved.PasswordChar = '\0';
             this.txtRecieved.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtRecieved.PlaceholderText = "payment recieved...";
+            this.txtRecieved.PlaceholderText = "";
             this.txtRecieved.SelectedText = "";
             this.txtRecieved.Size = new System.Drawing.Size(243, 30);
             this.txtRecieved.TabIndex = 13;
+            this.txtRecieved.TextChanged += new System.EventHandler(this.txtRecieved_TextChanged);
             // 
-            // btnChange
+            // txtChange
             // 
-            this.btnChange.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnChange.BorderRadius = 10;
-            this.btnChange.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btnChange.DefaultText = "";
-            this.btnChange.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.btnChange.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.btnChange.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btnChange.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.btnChange.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnChange.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnChange.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnChange.IconLeft = ((System.Drawing.Image)(resources.GetObject("btnChange.IconLeft")));
-            this.btnChange.Location = new System.Drawing.Point(48, 191);
-            this.btnChange.Name = "btnChange";
-            this.btnChange.PasswordChar = '\0';
-            this.btnChange.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnChange.PlaceholderText = "Change...";
-            this.btnChange.SelectedText = "";
-            this.btnChange.Size = new System.Drawing.Size(243, 30);
-            this.btnChange.TabIndex = 18;
+            this.txtChange.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtChange.BorderRadius = 10;
+            this.txtChange.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtChange.DefaultText = "";
+            this.txtChange.DisabledState.BorderColor = System.Drawing.Color.Black;
+            this.txtChange.DisabledState.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtChange.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtChange.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtChange.Enabled = false;
+            this.txtChange.FocusedState.BorderColor = System.Drawing.Color.SeaShell;
+            this.txtChange.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtChange.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtChange.IconLeft = global::PointofSale.Properties.Resources.cuba_peso_currency_symbol;
+            this.txtChange.Location = new System.Drawing.Point(48, 191);
+            this.txtChange.Name = "txtChange";
+            this.txtChange.PasswordChar = '\0';
+            this.txtChange.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtChange.PlaceholderText = "";
+            this.txtChange.SelectedText = "";
+            this.txtChange.Size = new System.Drawing.Size(243, 30);
+            this.txtChange.TabIndex = 18;
             // 
             // guna2ControlBox1
             // 
@@ -157,12 +137,37 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(31, 21);
             this.guna2ControlBox1.TabIndex = 4;
             // 
+            // TxtBillAmount
+            // 
+            this.TxtBillAmount.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBillAmount.BorderRadius = 10;
+            this.TxtBillAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBillAmount.DefaultText = "";
+            this.TxtBillAmount.DisabledState.BorderColor = System.Drawing.Color.Black;
+            this.TxtBillAmount.DisabledState.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.TxtBillAmount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBillAmount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBillAmount.Enabled = false;
+            this.TxtBillAmount.FocusedState.BorderColor = System.Drawing.Color.SeaShell;
+            this.TxtBillAmount.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBillAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBillAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtBillAmount.IconLeft = global::PointofSale.Properties.Resources.cuba_peso_currency_symbol;
+            this.TxtBillAmount.Location = new System.Drawing.Point(48, 122);
+            this.TxtBillAmount.Name = "TxtBillAmount";
+            this.TxtBillAmount.PasswordChar = '\0';
+            this.TxtBillAmount.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBillAmount.PlaceholderText = "";
+            this.TxtBillAmount.SelectedText = "";
+            this.TxtBillAmount.Size = new System.Drawing.Size(243, 30);
+            this.TxtBillAmount.TabIndex = 12;
+            // 
             // frmCheckout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(612, 313);
-            this.Controls.Add(this.btnChange);
+            this.Controls.Add(this.txtChange);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtBillAmount);
@@ -170,13 +175,14 @@
             this.Controls.Add(this.txtRecieved);
             this.Name = "frmCheckout";
             this.Text = "frmCheckout";
+            this.Load += new System.EventHandler(this.frmCheckout_Load);
             this.Controls.SetChildIndex(this.guna2ShadowPanel2, 0);
             this.Controls.SetChildIndex(this.txtRecieved, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.TxtBillAmount, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label4, 0);
-            this.Controls.SetChildIndex(this.btnChange, 0);
+            this.Controls.SetChildIndex(this.txtChange, 0);
             this.guna2ShadowPanel2.ResumeLayout(false);
             this.guna2ShadowPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -191,7 +197,7 @@
         public Guna.UI2.WinForms.Guna2TextBox TxtBillAmount;
         private System.Windows.Forms.Label label3;
         public Guna.UI2.WinForms.Guna2TextBox txtRecieved;
-        public Guna.UI2.WinForms.Guna2TextBox btnChange;
+        public Guna.UI2.WinForms.Guna2TextBox txtChange;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

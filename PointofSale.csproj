@@ -390,6 +390,7 @@
     <None Include="Resources\fast-food %281%29.png" />
     <None Include="Resources\groupfillcolor1.png" />
     <None Include="Resources\checklist.png" />
+    <None Include="Resources\cuba-peso-currency-symbol.png" />
     <Content Include="Resources\newproduct.png" />
     <None Include="Resources\pos-terminalfillcolor1.png" />
   </ItemGroup>

@@ -299,6 +299,7 @@ namespace PointofSale.Model
 
             // Moved outside the foreach loop
             MainID = 0;
+            detailID = 0;
             lblTable.Text = "";
             lblWaiter.Text = "";
             lblTable.Visible = false;
@@ -345,11 +346,37 @@ namespace PointofSale.Model
             DataTable dt2 = new DataTable();
             SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
             da2.Fill(dt2);
+
+            if (dt2.Rows[0]["orderType"].ToString() == "Delivery")
+            {
+                btnDelivery.Checked = true;
+                lblWaiter.Visible = false;
+                lblTable.Visible = false;
+            }
+            else if (dt2.Rows[0]["orderType"].ToString() == "Take-Out")
+            {
+                btnTakeout.Checked = true;
+                lblWaiter.Visible = false;
+                lblTable.Visible = false;
+            }
+            else
+            {
+                btnDineIn.Checked = true;
+                lblWaiter.Visible = true;
+                lblTable.Visible = true;
+                
+            }
+
+
             guna2DataGridView1.Rows.Clear();
 
             foreach (DataRow item in dt2.Rows) 
             {
-                string detailid = item["DetailID"].ToString();
+                lblTable.Text = item["TableName"].ToString();
+                lblWaiter.Text = item["WaiterName"].ToString();
+
+
+                string detailid = item["DetailID"].ToString();              
                 string proName = item["pName"].ToString();
                 string proid = item["proID"].ToString();
                 string qty = item["qty"].ToString();
@@ -357,7 +384,7 @@ namespace PointofSale.Model
                 string amount = item["amount"].ToString();
                 
 
-                object[] obj = { 0, detailid, proid,proName, qty,price,amount };
+                object[] obj = { 0, detailid, proid, proName, qty,price, amount };
                 guna2DataGridView1.Rows.Add(obj);
             }
 
@@ -366,6 +393,19 @@ namespace PointofSale.Model
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
+            frmCheckout frm = new frmCheckout();
+            frm.MainID = id;
+            frm.amt = Convert.ToDouble(lblTotal.Text);
+            MainClass.BlurBlackground(frm);
+
+            MainID = 0;
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "0.00";
+            guna2DataGridView1.Rows.Clear();
+
 
         }
     }
