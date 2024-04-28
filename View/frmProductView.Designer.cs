@@ -192,8 +192,7 @@
             // 
             // frmProductView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.guna2DataGridView1);
