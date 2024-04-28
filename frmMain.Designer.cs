@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.btnSettings = new Guna.UI2.WinForms.Guna2Button();
             this.btnReports = new Guna.UI2.WinForms.Guna2Button();
             this.btnKitchen = new Guna.UI2.WinForms.Guna2Button();
             this.btnPOS = new Guna.UI2.WinForms.Guna2Button();
@@ -37,7 +36,6 @@
             this.btnTables = new Guna.UI2.WinForms.Guna2Button();
             this.btnHProducts = new Guna.UI2.WinForms.Guna2Button();
             this.btnCateg = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
@@ -54,7 +52,6 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.btnSettings);
             this.guna2ShadowPanel1.Controls.Add(this.btnReports);
             this.guna2ShadowPanel1.Controls.Add(this.btnKitchen);
             this.guna2ShadowPanel1.Controls.Add(this.btnPOS);
@@ -62,7 +59,6 @@
             this.guna2ShadowPanel1.Controls.Add(this.btnTables);
             this.guna2ShadowPanel1.Controls.Add(this.btnHProducts);
             this.guna2ShadowPanel1.Controls.Add(this.btnCateg);
-            this.guna2ShadowPanel1.Controls.Add(this.btnHome);
             this.guna2ShadowPanel1.Controls.Add(this.label1);
             this.guna2ShadowPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2ShadowPanel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -72,36 +68,6 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(163, 657);
             this.guna2ShadowPanel1.TabIndex = 0;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.AllowDrop = true;
-            this.btnSettings.AutoRoundedCorners = true;
-            this.btnSettings.BorderRadius = 21;
-            this.btnSettings.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnSettings.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(130)))), ((int)(((byte)(96)))));
-            this.btnSettings.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.CheckedState.Image = global::PointofSale.Properties.Resources.settingswhite;
-            this.btnSettings.CustomizableEdges.BottomRight = false;
-            this.btnSettings.CustomizableEdges.TopRight = false;
-            this.btnSettings.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSettings.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSettings.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSettings.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSettings.FillColor = System.Drawing.Color.Transparent;
-            this.btnSettings.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
-            this.btnSettings.Image = global::PointofSale.Properties.Resources.settingsfillcolor;
-            this.btnSettings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSettings.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnSettings.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnSettings.Location = new System.Drawing.Point(12, 564);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(142, 45);
-            this.btnSettings.TabIndex = 8;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSettings.TextOffset = new System.Drawing.Point(10, 2);
             // 
             // btnReports
             // 
@@ -125,13 +91,14 @@
             this.btnReports.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnReports.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnReports.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnReports.Location = new System.Drawing.Point(12, 513);
+            this.btnReports.Location = new System.Drawing.Point(18, 492);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(142, 45);
             this.btnReports.TabIndex = 7;
             this.btnReports.Text = "Reports";
             this.btnReports.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnReports.TextOffset = new System.Drawing.Point(10, 2);
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // btnKitchen
             // 
@@ -155,7 +122,7 @@
             this.btnKitchen.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKitchen.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnKitchen.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnKitchen.Location = new System.Drawing.Point(12, 462);
+            this.btnKitchen.Location = new System.Drawing.Point(18, 441);
             this.btnKitchen.Name = "btnKitchen";
             this.btnKitchen.Size = new System.Drawing.Size(142, 45);
             this.btnKitchen.TabIndex = 6;
@@ -186,7 +153,7 @@
             this.btnPOS.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPOS.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnPOS.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnPOS.Location = new System.Drawing.Point(12, 411);
+            this.btnPOS.Location = new System.Drawing.Point(18, 390);
             this.btnPOS.Name = "btnPOS";
             this.btnPOS.Size = new System.Drawing.Size(142, 45);
             this.btnPOS.TabIndex = 5;
@@ -217,7 +184,7 @@
             this.btnStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnStaff.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnStaff.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnStaff.Location = new System.Drawing.Point(12, 360);
+            this.btnStaff.Location = new System.Drawing.Point(18, 339);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(142, 45);
             this.btnStaff.TabIndex = 4;
@@ -248,7 +215,7 @@
             this.btnTables.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTables.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnTables.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnTables.Location = new System.Drawing.Point(12, 309);
+            this.btnTables.Location = new System.Drawing.Point(18, 288);
             this.btnTables.Name = "btnTables";
             this.btnTables.Size = new System.Drawing.Size(142, 45);
             this.btnTables.TabIndex = 3;
@@ -279,7 +246,7 @@
             this.btnHProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHProducts.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnHProducts.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnHProducts.Location = new System.Drawing.Point(12, 258);
+            this.btnHProducts.Location = new System.Drawing.Point(18, 237);
             this.btnHProducts.Name = "btnHProducts";
             this.btnHProducts.Size = new System.Drawing.Size(142, 45);
             this.btnHProducts.TabIndex = 2;
@@ -310,7 +277,7 @@
             this.btnCateg.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCateg.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnCateg.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnCateg.Location = new System.Drawing.Point(12, 207);
+            this.btnCateg.Location = new System.Drawing.Point(18, 186);
             this.btnCateg.Name = "btnCateg";
             this.btnCateg.Size = new System.Drawing.Size(142, 45);
             this.btnCateg.TabIndex = 1;
@@ -318,37 +285,6 @@
             this.btnCateg.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCateg.TextOffset = new System.Drawing.Point(10, 2);
             this.btnCateg.Click += new System.EventHandler(this.btnCateg_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.AllowDrop = true;
-            this.btnHome.AutoRoundedCorners = true;
-            this.btnHome.BorderRadius = 21;
-            this.btnHome.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnHome.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(130)))), ((int)(((byte)(96)))));
-            this.btnHome.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.btnHome.CheckedState.Image = global::PointofSale.Properties.Resources.homewhite;
-            this.btnHome.CustomizableEdges.BottomRight = false;
-            this.btnHome.CustomizableEdges.TopRight = false;
-            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHome.FillColor = System.Drawing.Color.Transparent;
-            this.btnHome.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
-            this.btnHome.Image = global::PointofSale.Properties.Resources.homefillcolor;
-            this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHome.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnHome.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnHome.Location = new System.Drawing.Point(12, 156);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(142, 45);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Home";
-            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHome.TextOffset = new System.Drawing.Point(10, 2);
-            this.btnHome.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label1
             // 
@@ -482,7 +418,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox btnMax;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button btnHome;
         private Guna.UI2.WinForms.Guna2Button btnCateg;
         private Guna.UI2.WinForms.Guna2Button btnHProducts;
         private Guna.UI2.WinForms.Guna2Button btnTables;
@@ -490,7 +425,6 @@
         private Guna.UI2.WinForms.Guna2Button btnPOS;
         private Guna.UI2.WinForms.Guna2Button btnKitchen;
         private Guna.UI2.WinForms.Guna2Button btnReports;
-        private Guna.UI2.WinForms.Guna2Button btnSettings;
         private System.Windows.Forms.Label lblUser;
     }
 }

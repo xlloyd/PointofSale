@@ -77,5 +77,10 @@ namespace PointofSale
         {
             AddControls(new frmkitchenView());
         }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmReports());
+        }
     }
 }

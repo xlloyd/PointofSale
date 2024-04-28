@@ -161,6 +161,30 @@
       <DependentUpon>bill.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="repo\frmSalesByCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repo\frmSalesByCategory.Designer.cs">
+      <DependentUpon>frmSalesByCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repo\Menu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Menu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="repo\SalesByCategory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesByCategory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="repo\Staff.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Staff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SampleAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +214,12 @@
     </Compile>
     <Compile Include="View\frmProductView.Designer.cs">
       <DependentUpon>frmProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmStaffView.cs">
       <SubType>Form</SubType>
@@ -264,6 +294,21 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>bill.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="repo\frmSalesByCategory.resx">
+      <DependentUpon>frmSalesByCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repo\Menu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Menu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repo\SalesByCategory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesByCategory.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repo\Staff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Staff.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="SampleAdd.resx">
       <DependentUpon>SampleAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmProductView.resx">
       <DependentUpon>frmProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmStaffView.resx">
       <DependentUpon>frmStaffView.cs</DependentUpon>
@@ -427,6 +475,7 @@
     <None Include="Resources\checklist.png" />
     <None Include="Resources\cuba-peso-currency-symbol.png" />
     <None Include="Resources\ %282%29.png" />
+    <None Include="Resources\checklist1.png" />
     <Content Include="Resources\newproduct.png" />
     <None Include="Resources\pos-terminalfillcolor1.png" />
   </ItemGroup>
