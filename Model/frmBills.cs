@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Data.OleDb;
+using PointofSale.repo;
 
 namespace PointofSale.Model
 {
@@ -19,7 +16,7 @@ namespace PointofSale.Model
         }
 
         public int MainID = 0;
-
+       
         private void frmBills_Load(object sender, EventArgs e)
         {
             LoadData();
@@ -27,6 +24,7 @@ namespace PointofSale.Model
 
         private void LoadData()
         {
+            
             string qry = @"select MainID, TableName, WaiterName, orderType, status, total from tblMain where status <> 'Pending' ";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvvid);
@@ -56,19 +54,41 @@ namespace PointofSale.Model
         {
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
             {
-                
+
                 MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvvid"].Value);
                 this.Close();
-                
+
             }
 
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvdel")
             {
+               MainID = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvvid"].Value);
+                string qry = @"SELECT *
+               FROM tblMain m
+               INNER JOIN tblDetails d ON d.MainID = m.MainID
+               INNER JOIN products p ON p.pID = d.ProID
+               WHERE m.MainID = " + MainID + " ";
 
-            }
+                SqlCommand cmd = new SqlCommand(qry, MainClass.con);
+                MainClass.con.Open();
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                MainClass.con.Close();
+
+                frmPrint frm = new frmPrint();
+                bill cr = new bill();
+
+                cr.SetDatabaseLogon("sa", "1234");
+                cr.SetDataSource(dt);
+                frm.crystalReportViewer1.ReportSource = cr;
+                frm.crystalReportViewer1.Refresh();
+                frm.Show();
 
 
             }
         }
     }
+}
 

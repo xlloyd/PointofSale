@@ -63,18 +63,18 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(44, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 23);
+            this.label2.Size = new System.Drawing.Size(94, 23);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Bill Amount";
+            this.label2.Text = "Amount Due";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(321, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 23);
+            this.label3.Size = new System.Drawing.Size(129, 23);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Payment Received";
+            this.label3.Text = "Amount Received";
             // 
             // txtRecieved
             // 
@@ -92,6 +92,7 @@
             this.txtRecieved.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(61)))), ((int)(((byte)(59)))));
             this.txtRecieved.IconLeft = global::PointofSale.Properties.Resources.cuba_peso_currency_symbol;
             this.txtRecieved.Location = new System.Drawing.Point(325, 122);
+            this.txtRecieved.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRecieved.Name = "txtRecieved";
             this.txtRecieved.PasswordChar = '\0';
             this.txtRecieved.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -118,6 +119,7 @@
             this.txtChange.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChange.IconLeft = global::PointofSale.Properties.Resources.cuba_peso_currency_symbol;
             this.txtChange.Location = new System.Drawing.Point(48, 191);
+            this.txtChange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtChange.Name = "txtChange";
             this.txtChange.PasswordChar = '\0';
             this.txtChange.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -154,6 +156,7 @@
             this.TxtBillAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TxtBillAmount.IconLeft = global::PointofSale.Properties.Resources.cuba_peso_currency_symbol;
             this.TxtBillAmount.Location = new System.Drawing.Point(48, 122);
+            this.TxtBillAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtBillAmount.Name = "TxtBillAmount";
             this.TxtBillAmount.PasswordChar = '\0';
             this.TxtBillAmount.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
