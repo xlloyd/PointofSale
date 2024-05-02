@@ -1,6 +1,14 @@
-# TummyTime POS Proposal (Staff-Only Interface)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/216121986-1a506a75-2381-41c2-baff-eeab94bcec74.png" alt="Project Logo">
+</p>
 
----
+# TummyTime POS (Staff-Only Interface)
+
+<p align="center">
+  <img src="https://github.com/xlloyd/POS/blob/master/Resources/TUMMY%20TIME%20LOGO.png" alt="TummyTime POS Logo">
+</p>
+
+
 
 ## Project Introduction:
 The TummyTime POS Proposal is focused on developing a tailored, staff-only Point of Sale (POS) system for the food and beverage industry that emphasizes operational efficiency and simplifies user interactions using a Windows Forms application with Guna UI framework.
@@ -51,4 +59,11 @@ The Model-View-Presenter (MVP) design pattern will be employed for the Windows F
 
 ## Conclusion:
 The TummyTime POS system for staff focuses on simplicity and operational efficiency, utilizing the Guna UI framework within a Windows Forms environment to offer a POS solution that is both functional and user-friendly. This approach ensures that staff can focus more on customer service and less on navigating complex software, contributing to better workflow and increased productivity in the food and beverage industry.
-```
+<p align="center">
+  <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white" alt="Visual Studio Badge">
+  <img src="https://img.shields.io/badge/crystal-%23000000.svg?style=for-the-badge&logo=crystal&logoColor=white" alt="Crystal Badge">
+   <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" alt="Crystal Badge">
+    <img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white" alt="Crystal Badge">
+  
+</p>
+
